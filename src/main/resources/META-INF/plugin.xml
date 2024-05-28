@@ -1,0 +1,34 @@
+<idea-plugin>
+    <!-- Plugin ID and name -->
+    <id>com.example.api.plugin</id>
+    <name>API Client</name>
+    <version>1.0</version>
+    <vendor>Example Inc.</vendor>
+
+    <!-- Plugin description -->
+    <description>
+        This plugin provides actions to generate behaviours and test cases using an API.
+    </description>
+
+    <!-- Specify the IntelliJ SDK version compatibility -->
+    <idea-version since-build="202.0"/>
+
+    <!-- Define the actions provided by the plugin -->
+    <actions>
+        <!-- Action to generate behaviours -->
+        <action id="com.example.api.GenerateBehavioursAction"
+                class="com.example.api.GenerateBehavioursAction"
+                text="Generate Behaviours"
+                description="Generate behaviours using the API">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+
+        <!-- Action to generate test cases -->
+        <action id="com.example.api.GenerateTestCasesAction"
+                class="com.example.api.GenerateTestCasesAction"
+                text="Generate Test Cases"
+                description="Generate test cases using the API">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
